@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Point</title>
+  <link rel="stylesheet" href="style/showpoint.css">
+  <script src="script/showpoint.js"></script>
+</head>
+<body>
+  <div id="map"></div>
+  <form id="showpoint">
+    <div>
+      <label for="latlng">Lat Lng</label>
+    </div>
+    <div>
+      <input id="latlng" name="latlng" type="text">
+    </div>
+  </form>
+  <div id="error"> test</div>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnsPhIjIMdNFVNYZ1vr75DiZTv4JdXpCM&callback=showPoint.initMap">
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 100%;
+}
+
+#showpoint,
+#error {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #565656;
+}
+
+#showpoint {
+  padding: 4px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+#showpoint label,
+#showpoint input,
+#error {
+  font-size: 11px;
+}
+
+#showpoint input {
+  border:1px solid #565656;
+  width: 200px;
+}
+
+#showpoint div {
+  float: left;
+  margin: 4px;
+}
+
+#error {
+  display: none;
+  left: 350px;
+  padding: 11px;
+  position: absolute;
+  top: 10px;
+}
