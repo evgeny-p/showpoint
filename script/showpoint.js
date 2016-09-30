@@ -52,9 +52,7 @@ var showPoint = {
 
     var markerPosition = {lat: lat, lng: lng};
 
-    if (this.marker) {
-      this.marker.setMap(null);
-    }
+    this.removeMarker();
 
     this.marker = new google.maps.Marker({
       position: markerPosition,
@@ -77,7 +75,14 @@ var showPoint = {
   },
 
   resetMap: function() {
+    this.removeMarker();
     this.map.setCenter(this.initialPosition);
     this.map.setZoom(this.initialZoom);
+  },
+
+  removeMarker: function() {
+    if (this.marker) {
+      this.marker.setMap(null);
+    }
   }
 };
